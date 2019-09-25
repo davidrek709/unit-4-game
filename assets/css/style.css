@@ -1,0 +1,66 @@
+body{
+    background-image: url("../images/purple\ background.jpg")
+}
+h1{
+    background-color: rgba(211, 143, 254, 0.502);
+    text-align: center;
+    color: white;
+    width: 200px;
+    position: center;
+}
+#instructions{
+    color: white;
+    background-color: rgba(211, 143, 254, 0.502);
+    width: 700px;
+}
+#computer-number{
+    background-color: rgba(211, 143, 254, 0.502);
+    width: 150px;
+    height: 90px;
+}
+#wins-losses{
+    background-color: rgba(211, 143, 254, 0.502);
+    width: 150px;
+    height: 90px;
+}
+#ruby{
+    background: url("../images/ruby.png") no-repeat;
+    cursor: pointer;
+    border: none;
+    width:100px;
+    height: 100px;
+
+}
+#diamond{
+    background: url("../images/diamonds.png") no-repeat;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    border: none;
+}
+#gym{
+    background: url("../images/gym.png") no-repeat;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    border: none;
+}
+#emerald{
+    background: url("../images/emerald.png") no-repeat;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    border: none;
+}
+#your-score{
+    width: 150px;
+    height: 100px;
+    background-color: rgba(211, 143, 254, 0.502);
+    color: white;
+}
+#your-score-text{
+    color: white;
+    background-color: rgba(211, 143, 254, 0.502);
+    height: 20px;
+    width: 150px;
+}
