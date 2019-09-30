@@ -2,17 +2,16 @@ var number_random;
 var losses = 0;
 var wins = 0;
 var playerNumber = 0;
-var random;
-$( document ).ready(function(){
+$(document).ready(function(){
 number_random = Math.floor(Math.random() * 69 ) + 30;
 
 
  $("#computer-number").html(' ' + number_random);
     
- var num1 = Math.floor(Math.random()*11+1)
- var num2= Math.floor(Math.random()*11+1)
- var num3= Math.floor(Math.random()*11+1)
- var num4= Math.floor(Math.random()*11+1)
+ var num1 = Math.floor(Math.random()*11+1);
+ var num2= Math.floor(Math.random()*11+1);
+ var num3 = Math.floor(Math.random()*11+1);
+ var num4 = Math.floor(Math.random()*11+1);
 
  $("wins-text").text(wins);
  $("losses-text").text(losses);
@@ -26,7 +25,7 @@ number_random = Math.floor(Math.random() * 69 ) + 30;
     num3 = Math.floor(Math.random()*11+1);
     num4 = Math.floor(Math.random()*11+1);
     playerNumber= 0;
-    $('#your-score-text').text(playerNumber);
+    $('#computer-number').text(number_random);
     } 
 
 function youWin(){
@@ -45,7 +44,7 @@ reset()
 
 $('#ruby').on ('click', function(){
   playerNumber = playerNumber + num1;
-  console.log("New playerNumber = " + playerNumber);
+  console.log("playerNumber = " + playerNumber);
   $('#your-score-text').text(playerNumber); 
         
       if (playerNumber == number_random){
@@ -57,7 +56,7 @@ $('#ruby').on ('click', function(){
 })  
 $('#diamond').on ('click', function(){
   playerNumber = playerNumber + num2;
-  console.log("New playerNumber= " + playerNumber);
+  console.log("playerNumber= " + playerNumber);
   $('#your-score-text').text(playerNumber); 
       if (playerNumber == number_random){
         youWin();
@@ -68,7 +67,7 @@ $('#diamond').on ('click', function(){
 })  
 $('#gym').on ('click', function(){
   playerNumber = playerNumber + num3;
-  console.log("New playerNumber= " + playerNumber);
+  console.log("playerNumber= " + playerNumber);
   $('#your-score-text').text(playerNumber);
 
         if (playerNumber == number_random){
@@ -80,7 +79,7 @@ $('#gym').on ('click', function(){
 })  
 $('#emerald').on ('click', function(){
   playerNumber = playerNumber + num4;
-  console.log("New playerNumber= " + playerNumber);
+  console.log("playerNumber= " + playerNumber);
   $('#your-score-text').text(playerNumber); 
     
         if (playerNumber == number_random){
